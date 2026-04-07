@@ -23,8 +23,8 @@ class MyPlugin(Star):
         yield event.plain_result("Hello!")
         yield event.plain_result("你好！")
 
-        yield event.image_result("path/to/image.jpg") # 发送图片
-        yield event.image_result("https://example.com/image.jpg") # 发送 URL 图片，务必以 http 或 https 开头
+        # yield event.image_result("path/to/image.jpg") # 发送图片
+        yield event.image_result("https://cn.bing.com/th?id=OHR.BeaverPortrait_EN-US6459336252_UHD.jpg") # 发送 URL 图片，务必以 http 或 https 开头
 
     async def terminate(self):
         """可选择实现异步的插件销毁方法，当插件被卸载/停用时会调用。"""
